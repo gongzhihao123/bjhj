@@ -1,0 +1,59 @@
+.el-dialog {
+    min-width: 600px;
+    .el-dialog__header {
+        background: #40BB8A;
+        padding: 0;
+        line-height: 50px;
+        padding: 0 36px;
+        padding-right:20px;
+        .el-dialog__title {
+            color: #fff;
+        }
+        .el-dialog__close {
+            color: #fff;
+        }
+        .el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close{
+             color: #fff;
+        }
+    }
+    .dialog-table {
+        width:90%;
+        tr {
+            height: 60px;
+            td:first-child {
+                width: 100px;
+                text-align:center;
+            }
+            td:last-child {
+                width: 500px;
+            }
+            .el-checkbox {
+                height:30px;
+                line-height:30px;
+                padding:0;
+            }
+            .el-checkbox__label {
+                margin-right:16px;
+            }
+        }
+    }
+    .dialog-footer {
+        height:60px;
+        width:90%;
+        text-align:right;
+        line-height:60px;
+        margin-top:30px;
+        .sure {
+            background: #5CD189;
+            border-color: #5CD189;
+            color: #fff;
+        }
+        .sure:hover,.cancel:hover {
+            opacity:0.8;
+        }
+        .cancel {
+            color: #5CD189;
+            border-color: #5CD189;
+        }
+    }
+}

@@ -1,0 +1,195 @@
+html,
+body {
+  margin: 0;
+  color: $text;
+  letter-spacing: 0.5px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+*, *:hover {
+  @include transition(background-color .25s linear,
+                      color .10s linear,
+                      margin .25s linear,
+                      opacity .25s linear,
+                      filter .25s linear,
+                      visibility .25s linear,
+                      transform .25s linear,
+                      border-color .25s linear);
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+label::before {
+  content: '' !important;
+}
+
+// 页面上表格样式
+.display-table.el-table {
+    border: 0;
+
+    &::after,
+    &::before {
+      content: '';
+      background: transparent;
+    }
+
+
+    th {
+      border: 0;
+    }
+
+    td {
+      border: 0;
+    }
+    .head {
+      background: $left-menu-bg;
+      color: $white;
+    }
+
+    .el-button {
+      margin: 0 .3rem 0 0;
+    }
+  }
+
+.line {
+  text-align: center;
+}
+
+.el-table{
+  // margin-top: $width;
+  .head{
+    background: #F5F5F5;
+  }
+  .el-table__body-wrapper{
+    overflow: hidden;
+  }
+}
+
+.el-dialog--small {
+  // width: 500px;
+}
+
+.el-dialog__title {
+  font-weight: bold;
+}
+
+.amap-logo,.amap-copyright{
+  display: none!important;
+}
+
+.el-dialog__header {
+  // padding-bottom: $width;
+  // text-align: center;
+  // border-bottom: 1px solid #DCDCDC;
+
+  // .el-dialog__headerbtn{
+  //   position: absolute;
+  //   right: -$width*1.5;
+  //   top: -$width*1.5;
+    
+  //   .el-dialog__close{
+  //     display: block;
+  //     padding: $width/3;
+  //     font-size: 6px;
+  //     border-radius: 50%;
+  //     background: #656769;
+  //     font-size: 12px;
+  //   }
+  //   &:hover{
+  //     display: block;
+  //     color: #fff;
+  //     .el-dialog__close{
+  //       background: #FF6040;
+  //       color: #fff;
+  //     }
+  //   }
+  // }
+  
+
+  // .el-dialog__title{
+  //   color: #7BB2FE;
+  // }
+}
+
+// .el-dialog__body {
+//   padding: 30px 20px 0;
+// }
+
+// .el-dialog__footer {
+//   text-align: center;
+// }
+
+.el-popover {
+  // min-width: 100px !important;
+}
+
+// 清除浮动
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: $disabled;
+  font-size: 1rem;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $disabled;
+  font-size: 1rem;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $disabled;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: $disabled;
+  font-size: 1rem;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  height: .8rem;
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgba(95,95,95,.4);
+  transition: all .2s;
+  border-radius: .5rem;
+
+  &:hover {
+    background-color: rgba(95,95,95, .7);
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

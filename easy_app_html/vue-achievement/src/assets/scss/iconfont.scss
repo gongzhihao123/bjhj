@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 387638 */
+  src: url('//at.alicdn.com/t/font_387638_snzh0ag92s0v0a4i.eot');
+  src: url('//at.alicdn.com/t/font_387638_snzh0ag92s0v0a4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_387638_snzh0ag92s0v0a4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_387638_snzh0ag92s0v0a4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_387638_snzh0ag92s0v0a4i.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 1rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stop:before { content: "\e613"; }
+
+.icon-release:before { content: "\e928"; }
+
+.icon-set:before { content: "\e622"; }
+
+.icon-look:before { content: "\e62d"; }
+
+.icon-act:before { content: "\e6c3"; }
+
+.icon-delete:before { content: "\e60b"; }
+
+.icon-edit:before { content: "\e66b"; }
+
+.icon-check:before { content: "\e7de"; }
+
+.icon-clone:before { content: "\e696"; }
+
